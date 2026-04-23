@@ -447,7 +447,7 @@ footer {
   top: 0;
   right: -100%;
 
-  width: 360px;
+  width: 620px;
   max-width: 100%;
   height: 100vh;
 
@@ -571,4 +571,42 @@ footer {
   background: #d27668;
   color: white;
   transform: scale(1.1);
+}
+
+
+.cart-table thead {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 5;
+}
+
+.cart-table th:nth-child(1),
+.cart-table td:nth-child(1) {
+  width: 30%; /* Produit */
+}
+
+.cart-table th:nth-child(2),
+.cart-table td:nth-child(2) {
+  width: 15%; /* Prix */
+  text-align: center;
+}
+
+.cart-table th:nth-child(3),
+.cart-table td:nth-child(3) {
+  width: 25%; /* Quantité */
+  text-align: center;
+}
+
+.cart-table th:nth-child(4),
+.cart-table td:nth-child(4) {
+  width: 15%; /* Supprimer */
+  text-align: center;
+}
+
+.cart-table th:nth-child(5),
+.cart-table td:nth-child(5) {
+  width: 15%; /* Total */
+  text-align: center;
+  font-weight: bold;
 }
