@@ -4,13 +4,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --primary: #557153; /* Vert sauge / Olive doux */
-  --secondary: #a9af7e; /* Vert pistache très doux */
-  --accent: #f9f8f3; /* Fond crème très agréable pour les yeux */
-  --text: #3a4036; /* Gris-vert foncé au lieu du noir pur */
-  --bg: #ffffff; /* Blanc pur pour les cartes */
-  --danger: #d27668; /* Rouge doux / terre cuite */
-  --shadow: 0 10px 30px rgba(85, 113, 83, 0.08); /* Ombre colorée très subtile */
+  --primary: #557153;
+  /* Vert sauge / Olive doux */
+  --secondary: #a9af7e;
+  /* Vert pistache très doux */
+  --accent: #f9f8f3;
+  /* Fond crème très agréable pour les yeux */
+  --text: #3a4036;
+  /* Gris-vert foncé au lieu du noir pur */
+  --bg: #ffffff;
+  /* Blanc pur pour les cartes */
+  --danger: #d27668;
+  /* Rouge doux / terre cuite */
+  --shadow: 0 10px 30px rgba(85, 113, 83, 0.08);
+  /* Ombre colorée très subtile */
   --transition: all 0.3s ease;
 }
 
@@ -22,7 +29,8 @@
 }
 
 body {
-  background-color: var(--accent); /* Fond crème qui repose les yeux */
+  background-color: var(--accent);
+  /* Fond crème qui repose les yeux */
   color: var(--text);
   line-height: 1.6;
   display: flex;
@@ -229,18 +237,22 @@ body {
 .btn:hover {
   background-color: #3f543e;
 }
+
 .btn-outline {
   background-color: transparent;
   border: 2px solid var(--primary);
   color: var(--primary);
 }
+
 .btn-outline:hover {
   background-color: var(--primary);
   color: white;
 }
+
 .btn-danger {
   background-color: var(--danger);
 }
+
 .btn-danger:hover {
   background-color: #b35e51;
 }
@@ -361,9 +373,11 @@ footer {
   .nav-links.active {
     display: flex;
   }
+
   .hero h1 {
     font-size: 2rem;
   }
+
   .cart-table {
     display: block;
     overflow-x: auto;
@@ -440,8 +454,6 @@ footer {
   color: white;
 }
 
-
-
 .cart-sidebar {
   position: fixed;
   top: 0;
@@ -454,7 +466,7 @@ footer {
   background: #fff;
   z-index: 9999;
 
-  box-shadow: -10px 0 25px rgba(0,0,0,0.15);
+  box-shadow: -10px 0 25px rgba(0, 0, 0, 0.15);
 
   transition: right 0.3s ease;
 
@@ -511,7 +523,6 @@ footer {
   align-items: center;
 }
 
-
 .qty-btn,
 .cart-table button {
   width: 24px;
@@ -542,9 +553,6 @@ footer {
   transform: scale(1.1);
 }
 
-
-
-
 .cart-header button {
   width: 28px;
   height: 28px;
@@ -573,7 +581,6 @@ footer {
   transform: scale(1.1);
 }
 
-
 .cart-table thead {
   position: sticky;
   top: 0;
@@ -583,30 +590,35 @@ footer {
 
 .cart-table th:nth-child(1),
 .cart-table td:nth-child(1) {
-  width: 30%; /* Produit */
+  width: 30%;
+  /* Produit */
 }
 
 .cart-table th:nth-child(2),
 .cart-table td:nth-child(2) {
-  width: 15%; /* Prix */
+  width: 15%;
+  /* Prix */
   text-align: center;
 }
 
 .cart-table th:nth-child(3),
 .cart-table td:nth-child(3) {
-  width: 25%; /* Quantité */
+  width: 25%;
+  /* Quantité */
   text-align: center;
 }
 
 .cart-table th:nth-child(4),
 .cart-table td:nth-child(4) {
-  width: 15%; /* Supprimer */
+  width: 15%;
+  /* Supprimer */
   text-align: center;
 }
 
 .cart-table th:nth-child(5),
 .cart-table td:nth-child(5) {
-  width: 15%; /* Total */
+  width: 15%;
+  /* Total */
   text-align: center;
   font-weight: bold;
 }

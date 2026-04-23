@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // CART ICON CLICK (OPEN SIDEBAR)
   // =========================
   const cartIcons = document.querySelectorAll(".cart-icon");
-  cartIcons.forEach(function(icon) {
-    icon.addEventListener("click", function(e) {
+  cartIcons.forEach(function (icon) {
+    icon.addEventListener("click", function (e) {
       e.preventDefault();
       if (typeof window.openCart === "function") window.openCart();
     });
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // =========================
   const sidebar = document.getElementById("cart-sidebar");
   if (sidebar) {
-    sidebar.addEventListener("click", function(e) {
+    sidebar.addEventListener("click", function (e) {
       if (e.target === sidebar) {
         window.closeCart();
       }
